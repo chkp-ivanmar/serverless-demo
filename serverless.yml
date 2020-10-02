@@ -38,6 +38,13 @@ provider:
   stage: dev
   region: eu-central-1
 
+  # VPC Configuration
+  vpc:
+    securityGroupIds:
+      - sg-10e9ee6a
+    subnetIds:
+      - subnet-633ef31f
+
   # These environment variables are made available to our functions
   # under process.env.
   environment:
